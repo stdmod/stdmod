@@ -17,6 +17,6 @@ module Puppet::Parser::Functions
     return content if content != ''
     return function_template([template_name]) if template_name != ''
 
-    return nil
+    return :undef
   end
 end
