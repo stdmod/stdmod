@@ -25,7 +25,7 @@ module Puppet::Parser::Functions
 This fuction takes 3 arguments (hash key, default value and name of the hash parameter) and looks
 for the given hash key in the calling modules parameter hash, and returns the value.
 The function is intended to be used in templates.
-If no option is found in the parameter hash (default name: config_file_hash), default value (second argument), is returned.
+If no option is found in the parameter hash (default name: config_file_options_hash), default value (second argument), is returned.
 
 Default value of no
   <%= scope.function_hash_lookup(['PasswordAuthentication', 'no']) %>
@@ -47,7 +47,7 @@ EOS
     hash_name = args[2]
     module_name = parent_module_name
 
-    hash_name = "config_file_hash" if (hash_name == :undefined || hash_name == '' || hash_name == nil)
+    hash_name = "config_file_options_hash" if (hash_name == :undefined || hash_name == '' || hash_name == nil)
     value = lookupvar("#{module_name}::#{hash_name}")["#{option_name}"] if (lookupvar("#{module_name}::#{hash_name}").size > 0)
     value = "#{default_val}" if (value == :undefined || value == '' || value == nil)
 
