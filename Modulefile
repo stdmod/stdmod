@@ -1,5 +1,5 @@
 name          'example42-stdmod'
-version '0.0.3'
+version '0.0.4'
 author        'STDMOD contributors'
 project_page  'https://github.com/stdmod'
 source        'https://github.com/stdmod/stdmod'
