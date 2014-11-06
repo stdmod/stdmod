@@ -25,7 +25,7 @@ module Puppet::Parser::Functions
     args.delete(:undef)
     args.delete(:undefined)
     args.delete("")
-    args << :undefined
+    args << :undef
     return args[0]
   end
 end
