@@ -1,0 +1,14 @@
+{
+  "name": "example42-stdmod",
+  "version": "0.0.4",
+  "author": "STDMOD contributors",
+  "summary": "This is the common module for stdmod compliant modules",
+  "license": "Apache License, Version 2.0",
+  "source": "https://github.com/stdmod/stdmod",
+  "project_page": "https://github.com/stdmod",
+  "issues_url": "https://github.com/stdmod/stdmod/issues",
+  "description": "This module provides functions and resources used by stdmod modules based on the https://github.com/stdmod/puppet-skeletons. It is published on the Forge under the example42 account because it was not possible to create a stdmod user.",
+  "dependencies": [
+    {"name":"puppetlabs/stdlib"}
+  ]
+}
